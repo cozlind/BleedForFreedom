@@ -12,6 +12,9 @@ public class MenuSceneUIManager : MonoBehaviour {
 
     void Awake()
     {
+        PlayerPrefs.DeleteKey("bleed_character");
+
+
         armature = icon_character.GetComponent<UnityArmatureComponent>().armature;
         icon_character.SetActive(false);
         panel_appearence.SetActive(false);
